@@ -13,3 +13,6 @@ class Prototype:
     def getValue(self):
         return self._value
     
+class Type1(Prototype):
+    def
+    
