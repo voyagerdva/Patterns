@@ -14,5 +14,7 @@ class Prototype:
         return self._value
     
 class Type1(Prototype):
-    def
+    def __init__(self, numvber):
+        self._type = "Type1"
+        self._value
     
