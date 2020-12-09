@@ -67,17 +67,17 @@ class ObjectFactory:
 def main():
     ObjectFactory.initialize()
     
-    instance = ObjectFactory.getType1Value1()
-    print("%s: %s" % (instance.getType(), instance.getValue()))
+instance = ObjectFactory.getType1Value1()
+print(instance.getType(), instance.getValue())
     
-    instance = ObjectFactory.getType1Value2()
-    print("%s: %s" % (instance.getType(), instance.getValue()))
-    
-    instance = ObjectFactory.getType2Value1()
-    print("%s: %s" % (instance.getType(), instance.getValue()))
-    
-    instance = ObjectFactory.getType2Value2()
-    print("%s: %s" % (instance.getType(), instance.getValue()))
+instance = ObjectFactory.getType1Value2()
+print(instance.getType(), instance.getValue())
+
+instance = ObjectFactory.getType2Value1()
+print(instance.getType(), instance.getValue())
+
+instance = ObjectFactory.getType2Value2()
+print(instance.getType(), instance.getValue())
 
 
     
