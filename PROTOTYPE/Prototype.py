@@ -33,7 +33,7 @@ class Type2(Prototype):
 class ObjectFactory:
     """ Manages prototypes 
     Static factory, that encapsolates prototype
-    initialization and the allows instatiation
+    initialization, and the allows instatiation
     of the classes from these prototypes. """
     
     __type1Value1 = None
