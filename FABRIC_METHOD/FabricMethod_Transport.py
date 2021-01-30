@@ -2,14 +2,14 @@ from __future__ import annotations
 from abc import ABC, abstractmethod
 
 class ChooseTransport(ABC):
-    @abstractmethod
-    def factory_method(self):
-        pass
-
-    def choiceOfTransport(self) -> str:
+    def choiceOfTransport(self) -> str: #someOperation()
         transport = self.factory_method()
         result = f"для перемещения {transport.movingBy()}"
         return result
+
+    @abstractmethod
+    def factory_method(self): #createProduct()
+        pass
 
 
 class I_want_to_fly(ChooseTransport):
