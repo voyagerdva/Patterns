@@ -3,19 +3,20 @@ from abc import ABC, abstractmethod
 
 class Creator(ABC):
     def someOperation(self):
-        self.createProduct()
+        return self.createProduct().doStuff()
 
     @abstractmethod
     def createProduct(self):
         pass
 
+
 class ConcreteCreatorA(Creator):
     def createProduct(self):
-        return ConcreteProductA().doStuff()
+        return ConcreteProductA()
 
 class ConcreteCreatorB(Creator):
     def createProduct(self):
-        return ConcreteProductB().doStuff()
+        return ConcreteProductB()
 
 ######################################################
 
