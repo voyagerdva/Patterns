@@ -1,16 +1,27 @@
-class Controller():
+class English():
+    def talk(self):
+        print("Eng, hello!")
+
+class Franch():
+    def talk(self):
+        print("France, bonjour")
+
+############################################
+def intro(lang):
+    lang.talk()
+
+intro(Franch())
+intro(English())
+#=============================================
+
+class Parent:
     def action(self):
-        pass
+        print("parent talk")
 
-class Action1(Controller):
+class Child(Parent):
     def action(self):
-        print("Action 1")
+        print("Child listen")
 
-class Action2(Controller):
-    def action(self):
-        print("Action 2")
+c = Child()
 
-######################################
-Action1().action()
-Action2().action()
-
+c.action()
