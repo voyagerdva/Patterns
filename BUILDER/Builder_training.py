@@ -50,6 +50,15 @@ class Product1():
     def list_parts(self):
         print(f"Product parts are : {', '.join((self.parts))}", end="")
 
+# class Product1():
+#     def __init__(self):
+#         self.parts = []
+#
+#     def add(self, part: Any):
+#         self.parts.append(part)
+#
+#     def list_parts(self):
+#         print(f"Product parts are : {', '.join((self.parts))}", end="")
 
 ##################################
 
